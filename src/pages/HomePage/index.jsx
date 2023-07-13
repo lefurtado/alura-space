@@ -17,10 +17,10 @@ const HomePage = () => {
                         <img src={banner} alt="Imagem da terra vista do espaço" />
                     </div>
                 </section>
+                <div>
+                    <Gallery />
+                </div>
             </main>
-            <div>
-                <Gallery />
-            </div>
             <Footer />
         </>
     )
