@@ -1,9 +1,10 @@
+import Header from "components/Header";
+import Menu from "components/Menu";
+import Footer from 'components/Footer';
+import Gallery from 'components/Gallery';
+import Populars from 'components/Populars';
 import banner from './banner.png';
-import Header from "../../components/Header"
-import Menu from "../../components/Menu";
-import Footer from '../../components/Footer';
 import styles from './HomePage.module.scss';
-import Gallery from '../../components/Gallery';
 
 const HomePage = () => {
     return (
@@ -17,8 +18,9 @@ const HomePage = () => {
                         <img src={banner} alt="Imagem da terra vista do espaço" />
                     </div>
                 </section>
-                <div>
+                <div className={styles.main__gallery}>
                     <Gallery />
+                    <Populars />
                 </div>
             </main>
             <Footer />
